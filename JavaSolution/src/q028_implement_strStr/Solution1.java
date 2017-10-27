@@ -1,4 +1,4 @@
-package q028._implement_strStr;
+package q028_implement_strStr;
 
 /**
  * Created by zhanghao1 on 2017/10/25.
