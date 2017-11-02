@@ -1,0 +1,1 @@
+prev,curr两个指针，移除节点时候要用temp变量先保存下一个节点curr.next
