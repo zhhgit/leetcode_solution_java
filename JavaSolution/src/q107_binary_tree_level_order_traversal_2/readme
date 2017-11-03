@@ -1,0 +1,2 @@
+递归树的每个level。新建的List<TreeNode>放入Stack。最后依次从Stack中取出，转化为List<Integer>。
+递归过程可以被简化，每次将新的List<TreeNode>赋值给其父List<TreeNode>。
