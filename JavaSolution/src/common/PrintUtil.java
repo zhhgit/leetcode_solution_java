@@ -41,4 +41,13 @@ public class PrintUtil {
             pointer = pointer.next;
         }
     }
+
+    //打印数字数组
+    public static void printNumArray(int[] nums){
+        for(int num:nums){
+            System.out.print(num);
+            System.out.print(" ");
+        }
+        System.out.println();
+    }
 }
