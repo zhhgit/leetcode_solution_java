@@ -8,10 +8,10 @@ public class Solution1 {
     public static void main(String[] args){
         int[] candidates = {10, 1, 2, 7, 6, 1, 5};
         int target = 8;
-        System.out.println(combinationSum(candidates,target));
+        System.out.println(combinationSum2(candidates,target));
     }
 
-    private static List<List<Integer>> combinationSum(int[] candidates, int target) {
+    private static List<List<Integer>> combinationSum2(int[] candidates, int target)  {
         Arrays.sort(candidates);
         List<List<Integer>> lists = new LinkedList<>();
         if(candidates.length == 0){
