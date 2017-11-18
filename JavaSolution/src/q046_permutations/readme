@@ -1,0 +1,1 @@
+backTracking方法，用一个boolean数组保存该位置的数字是否已经使用过。
