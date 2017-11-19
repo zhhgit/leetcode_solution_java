@@ -50,4 +50,23 @@ public class PrintUtil {
         }
         System.out.println();
     }
+
+    //打印二维数组
+    public static void print2DMatrix(int[][] matrix){
+        int row = matrix.length;
+        int column = 0;
+        if(row > 0){
+            column = matrix[0].length;
+        }
+        else{
+            return;
+        }
+        for(int i=0;i<row;i++){
+            for(int j=0;j< column;j++){
+                System.out.print(matrix[i][j]);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
 }
