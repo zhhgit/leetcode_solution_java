@@ -1,0 +1,1 @@
+HashMap，以重排序后的字符串为key，value为List<String>。
