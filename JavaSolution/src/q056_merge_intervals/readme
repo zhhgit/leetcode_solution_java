@@ -1,0 +1,1 @@
+重载Collections.sort，对list排序。一次循环与前一个比较，该merge的merge，不该merge的将前面的放入返回list。
