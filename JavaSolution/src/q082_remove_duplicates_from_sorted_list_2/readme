@@ -1,0 +1,1 @@
+new一个fakeHead，因为head就可能被移除。prev和curr依次移动，与后一个重复时依次向后移动。

@@ -2,6 +2,7 @@ package q083_remove_duplicates_from_sorted_list;
 
 import common.ListBuilder;
 import common.ListNode;
+import common.PrintUtil;
 
 /**
  * Created by zhanghao1 on 2017/11/1.
@@ -12,11 +13,7 @@ public class Solution1 {
         ListBuilder listBuilder = new ListBuilder(nums);
         ListNode head = listBuilder.getHead();
         ListNode retHead = deleteDuplicates(head);
-        ListNode pointer = retHead;
-        while(pointer != null){
-            System.out.println(pointer.val);
-            pointer = pointer.next;
-        }
+        PrintUtil.printList(retHead);
     }
 
     private static ListNode deleteDuplicates(ListNode head) {
