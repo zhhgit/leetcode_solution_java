@@ -1,0 +1,2 @@
+Solution1 backTracking超时。
+Solution2 queue中字符串一个字母变化，如果包含在wordList中就添加，注意记录访问过。
