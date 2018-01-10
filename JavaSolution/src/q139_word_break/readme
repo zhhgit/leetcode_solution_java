@@ -1,0 +1,1 @@
+数组breakable保存的是s.substring(0,i)是否是可断开的。动态规划，递归并存储。
