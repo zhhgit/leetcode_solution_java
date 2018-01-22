@@ -1,0 +1,3 @@
+intervals.get(i).end < newInterval.start一定不相交，直接add
+相交的直到不满足intervals.get(i).start > newInterval.end，也就是满足intervals.get(i).start <= newInterval.end时，每次更新newInterval
+最后的也不相交，直接add
