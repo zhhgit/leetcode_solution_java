@@ -18,7 +18,7 @@ public class Solution1 {
                 sp++;
                 pp++;
             }
-            //p为*，用startIdx记录最后一个*出现的位置，match记录对应于这个*的最后一个s中的字符
+            //p为*，用startIdx记录最后一个*出现的位置，match记录对应于这个*的最后一个s中的字符的后一位
             else if (pp < p.length() && p.charAt(pp) == '*'){
                 starIdx = pp;
                 match = sp;
