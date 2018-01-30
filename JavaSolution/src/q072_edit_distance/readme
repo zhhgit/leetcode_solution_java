@@ -1,0 +1,1 @@
+二维数组动态规划。word1.charAt(i) == word2.charAt(j)时，dp[i+1][j+1] = dp[i][j]，否则为1 + min{上、左、左上}，分别对应于删除、插入、替换
