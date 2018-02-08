@@ -1,0 +1,1 @@
+在实现Comparator的compare方法时，碰到类似12,128的情况，难于考虑，直接比较str1+str2和str2+str1。
