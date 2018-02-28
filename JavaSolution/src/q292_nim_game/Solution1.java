@@ -8,7 +8,7 @@ public class Solution1 {
 		}
 	}
 	
-    public static boolean canWinNim(int n) {
+    private static boolean canWinNim(int n) {
     	int remain = n % 4;
     	return (remain != 0);
     }
