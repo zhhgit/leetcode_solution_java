@@ -1,0 +1,1 @@
+注意(start + end) / 2溢出的情况，用(end - start) / 2 + start替代。
