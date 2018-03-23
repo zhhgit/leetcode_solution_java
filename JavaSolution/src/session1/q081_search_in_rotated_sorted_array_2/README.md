@@ -1,0 +1,1 @@
+ft,right,middle判断pivot位置，判断target位置。

@@ -1,0 +1,1 @@
+计算左右和，根据和与target关系移动left与right位置。

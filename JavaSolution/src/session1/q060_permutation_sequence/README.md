@@ -1,0 +1,1 @@
+Solution1时间超限。Solution2考虑每一位如何得到的。

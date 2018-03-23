@@ -1,0 +1,2 @@
+Solution1:超时。while循环每次生成新的toAdd List,如果为0表示不能达到新的字符串，返0。否则用toAdd更新reached List即新一轮循环中达到的字符串，达到的从原来List删除，添加进toAdd。
+Solution2:队列，每次循环添加更够达到的字符串进队列，每次从队头取元素，直到队列为空为止。

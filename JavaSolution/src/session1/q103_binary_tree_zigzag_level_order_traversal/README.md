@@ -1,0 +1,1 @@
+prev,curr分别保存上个level和当前level。

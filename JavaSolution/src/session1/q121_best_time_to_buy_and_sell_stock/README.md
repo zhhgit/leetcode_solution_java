@@ -1,0 +1,1 @@
+Solution1循环结果正确，但是时间超过限制。Solution2依次做差。

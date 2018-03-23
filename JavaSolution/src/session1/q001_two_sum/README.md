@@ -1,0 +1,1 @@
+HashMap中key存值，value存序号。依次比对。
