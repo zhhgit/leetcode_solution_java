@@ -1,6 +1,6 @@
 package session2.q080_remove_duplicates_from_sorted_array_2;
 
-import common.PrintUtil;
+import session2.common.PrintUtil;
 
 import java.util.HashMap;
 

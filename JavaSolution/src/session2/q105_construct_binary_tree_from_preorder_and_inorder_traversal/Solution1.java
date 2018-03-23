@@ -1,7 +1,7 @@
 package session2.q105_construct_binary_tree_from_preorder_and_inorder_traversal;
 
-import common.PrintUtil;
-import common.TreeNode;
+import session2.common.PrintUtil;
+import session2.common.TreeNode;
 
 import java.util.Arrays;
 

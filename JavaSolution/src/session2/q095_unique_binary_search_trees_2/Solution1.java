@@ -1,7 +1,7 @@
 package session2.q095_unique_binary_search_trees_2;
 
-import common.PrintUtil;
-import common.TreeNode;
+import session2.common.PrintUtil;
+import session2.common.TreeNode;
 import java.util.LinkedList;
 import java.util.List;
 

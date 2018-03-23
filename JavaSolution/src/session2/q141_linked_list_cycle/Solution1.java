@@ -1,7 +1,7 @@
 package session2.q141_linked_list_cycle;
 
-import common.ListBuilder;
-import common.ListNode;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
 
 /**
  * Created by zhanghao1 on 2017/11/7.

@@ -1,9 +1,9 @@
 package session2.q109_convert_sorted_list_to_binary_search_tree;
 
-import common.ListBuilder;
-import common.ListNode;
-import common.PrintUtil;
-import common.TreeNode;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
+import session2.common.PrintUtil;
+import session2.common.TreeNode;
 
 public class Solution1 {
     public static void main(String[] args){

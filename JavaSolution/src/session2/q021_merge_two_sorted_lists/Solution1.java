@@ -1,6 +1,6 @@
 package session2.q021_merge_two_sorted_lists;
 
-import common.*;
+import session2.common.*;
 /**
  * Created by zhanghao1 on 2017/10/24.
  */

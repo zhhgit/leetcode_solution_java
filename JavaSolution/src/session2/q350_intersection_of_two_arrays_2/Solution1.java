@@ -3,7 +3,7 @@ package session2.q350_intersection_of_two_arrays_2;
 import java.util.HashMap;
 import java.util.Map;
 
-import common.PrintUtil;
+import session2.common.PrintUtil;
 
 public class Solution1 {
 	public static void main(String[] args) {

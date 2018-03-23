@@ -1,7 +1,7 @@
 package session2.q349_intersection_of_two_arrays;
 
 import java.util.HashSet;
-import common.PrintUtil;
+import session2.common.PrintUtil;
 
 public class Solution1 {
 	public static void main(String[] args) {

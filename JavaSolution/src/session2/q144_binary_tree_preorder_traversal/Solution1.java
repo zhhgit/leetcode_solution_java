@@ -1,7 +1,7 @@
 package session2.q144_binary_tree_preorder_traversal;
 
-import common.TreeBuilder;
-import common.TreeNode;
+import session2.common.TreeBuilder;
+import session2.common.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;

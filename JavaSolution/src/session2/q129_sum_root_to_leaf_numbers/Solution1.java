@@ -1,7 +1,7 @@
 package session2.q129_sum_root_to_leaf_numbers;
 
-import common.TreeBuilder;
-import common.TreeNode;
+import session2.common.TreeBuilder;
+import session2.common.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package session2.q116_populating_next_right_pointers_in_each_node;
 
-import common.TreeLinkNode;
+import session2.common.TreeLinkNode;
 
 import java.util.LinkedList;
 import java.util.List;

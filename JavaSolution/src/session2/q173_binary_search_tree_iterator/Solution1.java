@@ -1,7 +1,7 @@
 package session2.q173_binary_search_tree_iterator;
 
-import common.TreeBuilder;
-import common.TreeNode;
+import session2.common.TreeBuilder;
+import session2.common.TreeNode;
 import java.util.Stack;
 
 public class Solution1 {

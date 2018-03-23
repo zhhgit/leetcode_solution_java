@@ -1,7 +1,7 @@
 package session2.q101_symmetric_tree;
 
-import common.TreeBuilder;
-import common.TreeNode;
+import session2.common.TreeBuilder;
+import session2.common.TreeNode;
 
 /**
  * Created by zhanghao1 on 2017/11/2.

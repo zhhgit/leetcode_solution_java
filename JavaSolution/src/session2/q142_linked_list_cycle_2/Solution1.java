@@ -1,6 +1,6 @@
 package session2.q142_linked_list_cycle_2;
 
-import common.ListNode;
+import session2.common.ListNode;
 
 public class Solution1 {
     public static void main(String[] args){

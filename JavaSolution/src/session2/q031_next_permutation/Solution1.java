@@ -1,6 +1,6 @@
 package session2.q031_next_permutation;
 
-import common.PrintUtil;
+import session2.common.PrintUtil;
 
 import java.util.Arrays;
 

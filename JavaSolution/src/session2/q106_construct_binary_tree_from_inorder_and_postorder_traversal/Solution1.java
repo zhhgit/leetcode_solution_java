@@ -1,7 +1,7 @@
 package session2.q106_construct_binary_tree_from_inorder_and_postorder_traversal;
 
-import common.PrintUtil;
-import common.TreeNode;
+import session2.common.PrintUtil;
+import session2.common.TreeNode;
 
 import java.util.Arrays;
 

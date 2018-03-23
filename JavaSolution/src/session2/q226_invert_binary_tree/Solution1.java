@@ -1,8 +1,8 @@
 package session2.q226_invert_binary_tree;
 
-import common.PrintUtil;
-import common.TreeBuilder;
-import common.TreeNode;
+import session2.common.PrintUtil;
+import session2.common.TreeBuilder;
+import session2.common.TreeNode;
 
 public class Solution1 {
     public static void main(String[] args){

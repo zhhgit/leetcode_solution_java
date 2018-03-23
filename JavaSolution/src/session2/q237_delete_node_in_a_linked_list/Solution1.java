@@ -1,6 +1,6 @@
 package session2.q237_delete_node_in_a_linked_list;
 
-import common.ListNode;
+import session2.common.ListNode;
 
 public class Solution1 {
     public static void main(String[] args){

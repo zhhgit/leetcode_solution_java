@@ -1,7 +1,7 @@
 package session2.q234_palindrome_linked_list;
 
-import common.ListBuilder;
-import common.ListNode;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
 
 public class Solution1 {
     public static void main(String[] args){

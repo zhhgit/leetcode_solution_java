@@ -1,6 +1,6 @@
 package session2.q054_spiral_matrix;
 
-import common.PrintUtil;
+import session2.common.PrintUtil;
 
 import java.util.LinkedList;
 import java.util.List;

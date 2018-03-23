@@ -1,7 +1,7 @@
 package session2.q257_binary_tree_paths;
 
-import common.TreeBuilder;
-import common.TreeNode;
+import session2.common.TreeBuilder;
+import session2.common.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;

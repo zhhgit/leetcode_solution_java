@@ -1,8 +1,8 @@
 package session2.q083_remove_duplicates_from_sorted_list;
 
-import common.ListBuilder;
-import common.ListNode;
-import common.PrintUtil;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
+import session2.common.PrintUtil;
 
 /**
  * Created by zhanghao1 on 2017/11/1.

@@ -1,7 +1,7 @@
 package session2.q108_convert_sorted_array_to_binary_search_tree;
 
-import common.PrintUtil;
-import common.TreeNode;
+import session2.common.PrintUtil;
+import session2.common.TreeNode;
 
 /**
  * Created by zhanghao1 on 2017/11/2.

@@ -1,8 +1,8 @@
 package session2.q019_remove_nth_node_from_end_of_list;
 
-import common.ListBuilder;
-import common.ListNode;
-import common.PrintUtil;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
+import session2.common.PrintUtil;
 
 public class Solution1 {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package common;
+package session2.common;
 
 /**
  * Created by zhanghao1 on 2017/11/2.

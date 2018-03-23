@@ -1,6 +1,6 @@
 package session2.q235_lowest_common_ancestor_of_a_binary_search_tree;
 
-import common.TreeNode;
+import session2.common.TreeNode;
 
 public class Solution1 {
     public static void main(String[] args){

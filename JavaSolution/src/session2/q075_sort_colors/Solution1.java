@@ -1,6 +1,6 @@
 package session2.q075_sort_colors;
 
-import common.PrintUtil;
+import session2.common.PrintUtil;
 
 public class Solution1 {
     public static void main(String[] args){

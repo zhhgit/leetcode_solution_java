@@ -1,6 +1,6 @@
 package session2.q104_maximum_depth_of_binary_tree;
 
-import common.*;
+import session2.common.*;
 
 /**
  * Created by zhanghao1 on 2017/11/2.

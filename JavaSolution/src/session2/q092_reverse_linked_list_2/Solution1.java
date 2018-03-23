@@ -1,8 +1,8 @@
 package session2.q092_reverse_linked_list_2;
 
-import common.ListBuilder;
-import common.ListNode;
-import common.PrintUtil;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
+import session2.common.PrintUtil;
 
 public class Solution1 {
     public static void main(String[] args){

@@ -1,6 +1,6 @@
 package session2.q034_search_for_a_range;
 
-import common.PrintUtil;
+import session2.common.PrintUtil;
 
 public class Solution1 {
     public static void main(String[] args){

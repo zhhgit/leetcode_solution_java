@@ -1,8 +1,8 @@
 package session2.q160_intersection_of_two_linked_lists;
 
-import common.ListBuilder;
-import common.ListNode;
-import common.PrintUtil;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
+import session2.common.PrintUtil;
 
 public class Solution1 {
     public static void main(String[] args){

@@ -1,6 +1,6 @@
 package session2.q133_clone_graph;
 
-import common.UndirectedGraphNode;
+import session2.common.UndirectedGraphNode;
 
 import java.util.HashMap;
 

@@ -1,8 +1,8 @@
 package session2.q148_sort_list;
 
-import common.ListBuilder;
-import common.ListNode;
-import common.PrintUtil;
+import session2.common.ListBuilder;
+import session2.common.ListNode;
+import session2.common.PrintUtil;
 
 import java.util.*;
 
