@@ -1,0 +1,1 @@
+找规律。List<List<Character>>
