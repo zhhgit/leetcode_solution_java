@@ -1,0 +1,1 @@
+重排序后的字符串作为key，value是对应的List<String>
