@@ -1,0 +1,1 @@
+考虑n==1,n=Integer.MIN_VALUE,x==0.0等异常情况。n分奇偶数考虑。
