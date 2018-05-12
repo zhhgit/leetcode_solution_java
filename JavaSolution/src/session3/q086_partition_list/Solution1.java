@@ -13,8 +13,35 @@ public class Solution1 {
     }
 
     private static ListNode partition(ListNode head, int x) {
-        ListNode fakeHeadLeft;
-        ListNode fakeHeadRight;
-        return new ListNode(0);
+        ListNode fakeHeadLeft = new ListNode(0);
+        ListNode fakeHeadRight = new ListNode(0);
+        ListNode left = fakeHeadLeft;
+        ListNode right = fakeHeadRight;
+        partitionEach(left,right,head,x);
+        left = fakeHeadLeft;
+        while (left.next!= null){
+            left = left.next;
+        }
+        left.next = fakeHeadRight.next;
+        return fakeHeadLeft.next;
+    }
+
+    private static void partitionEach(ListNode left,ListNode right,ListNode remain,int x){
+        if(remain != null){
+            ListNode nextNode = remain.next;
+            if(remain.val < x){
+                left.next = remain;
+                left = left.next;
+            }
+            else{
+                right.next = remain;
+                right = right.next;
+            }
+            partitionEach(left,right,nextNode,x);
+        }
+        else{
+            left.next = null;
+            right.next = null;
+        }
     }
 }
