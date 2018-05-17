@@ -1,0 +1,1 @@
+删除重复的ListNode，要注意当不重复可以直接curr = curr.next，但是删除重复的节点后，不能直接curr = curr.next
