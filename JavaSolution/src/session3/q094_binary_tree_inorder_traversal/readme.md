@@ -1,1 +1,3 @@
 Solution1递归。
+Solution2使用Deque当做Stack使用。每个节点如果存在left子节点，就把父节点放入stack，应该后续还要使用父节点，所以一定是stack的结构。
+当从stack中取出一个节点后，把它的值放入list。然后如果其有右子节点，则curr为右子节点。右子节点也符合如果有left，依次放入stack的规律。
