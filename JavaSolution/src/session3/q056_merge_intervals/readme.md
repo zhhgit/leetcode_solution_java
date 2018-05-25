@@ -1,0 +1,1 @@
+先依据interval.start排序，然后每次确定是否可以和下一个merge，能merge就merge，不能就把前一个放入结果的List<Interval>
