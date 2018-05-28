@@ -15,7 +15,7 @@ public class Solution1 {
         List<List<Integer>> lists = new LinkedList<>();
         int len = nums.length;
         if(len == 0){
-            lists.add(new LinkedList<>());
+            lists.add(new LinkedList<Integer>());
             return lists;
         }
         boolean[] used = new boolean[len];

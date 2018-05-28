@@ -16,7 +16,7 @@ public class Solution1 {
             return lists;
         }
         if(k == 0){
-            lists.add(new LinkedList<>());
+            lists.add(new LinkedList<Integer>());
             return lists;
         }
         List<Integer> tempList = new LinkedList<>();

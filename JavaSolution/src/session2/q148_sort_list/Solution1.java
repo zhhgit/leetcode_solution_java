@@ -14,7 +14,7 @@ public class Solution1 {
     }
 
     private static ListNode sortList(ListNode head) {
-        Queue<ListNode> queue = new PriorityQueue<>(new Comparator<ListNode>() {
+        Queue<ListNode> queue = new PriorityQueue<>(1,new Comparator<ListNode>() {
             @Override
             public int compare(ListNode o1, ListNode o2) {
                 return o1.val-o2.val;

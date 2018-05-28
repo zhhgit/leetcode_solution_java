@@ -16,7 +16,7 @@ public class Solution1 {
         }
         List<List<Character>> lists = new LinkedList<>();
         for(int i = 0;i<numRows;i++){
-            lists.add(new LinkedList<>());
+            lists.add(new LinkedList<Character>());
         }
         int len = s.length();
         int groupSize = numRows * 2 - 2;

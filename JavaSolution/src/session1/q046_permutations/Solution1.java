@@ -10,7 +10,7 @@ public class Solution1 {
 
     private static List<List<Integer>> permute(int[] nums) {
         LinkedList<List<Integer>> ret = new LinkedList<>();
-        ret.add(new LinkedList<>());
+        ret.add(new LinkedList<Integer>());
         for(int i=0;i<nums.length;i++){
             while(ret.peek().size()==i){
                 List<Integer> temp = ret.remove();

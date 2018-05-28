@@ -1,6 +1,8 @@
 package session3.q088_merge_sorted_array;
 
 import session3.common.PrintUtil;
+
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
@@ -24,7 +26,7 @@ public class Solution1 {
         for(int i = 0;i<n;i++){
             list.add(nums2[i]);
         }
-        list.sort(new Comparator<Integer>() {
+        Collections.sort(list,new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
                 return o1 - o2;

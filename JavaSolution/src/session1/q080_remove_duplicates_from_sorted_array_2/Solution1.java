@@ -20,7 +20,7 @@ public class Solution1 {
                 hm.put(nums[i],1);
             }
             else if(hm.get(nums[i])==1){
-                hm.replace(nums[i],2);
+                hm.put(nums[i],2);
             }
         }
         int i=0;
