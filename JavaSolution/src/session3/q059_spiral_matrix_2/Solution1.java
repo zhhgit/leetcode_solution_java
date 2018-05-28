@@ -4,7 +4,7 @@ import session3.common.PrintUtil;
 
 public class Solution1 {
     public static void main(String[] args){
-        int n = 3;
+        int n = 5;
         PrintUtil.print2DMatrix(generateMatrix(n));
     }
 
@@ -17,7 +17,7 @@ public class Solution1 {
             for(int j = i;j < n-1-i;j++){
                 ret[i][j] = num++;
             }
-            for(int j = i;j < n-i-i;j++){
+            for(int j = i;j < n-1-i;j++){
                 ret[j][n-1-i] = num++;
             }
             for(int j = n- 1 - i;j > i;j--){
