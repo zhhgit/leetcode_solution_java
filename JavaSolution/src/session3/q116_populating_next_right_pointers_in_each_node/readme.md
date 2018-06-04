@@ -1,0 +1,1 @@
+prev和next两个list，层级遍历，每次层级建立next指针。
