@@ -29,7 +29,25 @@ public class Solution1 {
         int rootVal = preorder[preStart];
         TreeNode root = new TreeNode(rootVal);
         int rootPos = getRootPosInorder(inorder,inStart,rootVal);
-        //TODO
+        // 没有左子树
+        if (rootPos == inStart){
+            root.right = buildTreeWithRange(preorder,inorder,preStart + 1,inStart + 1,len - 1);
+        }
+        // 没有右子树
+        else if(rootPos == inStart + len - 1){
+            root.left = buildTreeWithRange(preorder,inorder,preStart + 1,inStart,len - 1);
+        }
+        // 左右子树都有
+        else{
+            int leftPreStart = preStart + 1;
+            int leftInStart = inStart;
+            int leftLen = rootPos - inStart;
+            int rightPreStart = leftPreStart + leftLen;
+            int rightInStart = rootPos + 1;
+            int rightLen = len - 1 - leftLen;
+            root.left = buildTreeWithRange(preorder,inorder,leftPreStart,leftInStart,leftLen);
+            root.right = buildTreeWithRange(preorder,inorder,rightPreStart,rightInStart,rightLen);
+        }
         return root;
     }
 
