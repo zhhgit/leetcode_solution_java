@@ -1,0 +1,3 @@
+curFarthest：当前位置能达到的最远pos
+curEnd：当前步数能达到的最远pos
+jumps：步数

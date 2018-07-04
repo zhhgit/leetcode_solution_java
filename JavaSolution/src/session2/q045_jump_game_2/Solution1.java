@@ -12,6 +12,7 @@ public class Solution1 {
         int curFarthest = 0;
         for (int i = 0; i < nums.length - 1; i++) {
             curFarthest = Math.max(curFarthest, i + nums[i]);
+            // 当前位置达到了当前步数能到达的最远位置，必须再跳一步，并将当前步数最远距离更新为当前位置最远距离。
             if (i == curEnd) {
                 jumps++;
                 curEnd = curFarthest;
