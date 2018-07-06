@@ -1,0 +1,1 @@
+matrix[i][j]表示word1的前i位转换到word2的前j为的最小操作步数
