@@ -1,0 +1,1 @@
+符合闭合的条件是left == right,可以继续循环的条件是left >= right
