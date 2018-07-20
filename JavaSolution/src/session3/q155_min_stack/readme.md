@@ -1,0 +1,1 @@
+map<Integer,Integer>保存stack的size与最小值的对应关系。
