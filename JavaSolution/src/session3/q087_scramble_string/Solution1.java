@@ -1,7 +1,5 @@
 package session3.q087_scramble_string;
 
-import java.util.Arrays;
-
 public class Solution1 {
     public static void main(String[] args){
         String[] s1Arr = {"great","abcde","abab"};
@@ -12,31 +10,31 @@ public class Solution1 {
     }
 
     private static boolean isScramble(String s1, String s2) {
+        if (s1.equals(s2)){
+            return true;
+        }
         int len1 = s1.length();
         int len2 = s2.length();
         if (len1 != len2){
             return false;
         }
-        if (len1 <= 3){
-            char[] s1CharArray = s1.toCharArray();
-            Arrays.sort(s1CharArray);
-            String s1Sort = new String(s1CharArray);
-            char[] s2CharArray = s2.toCharArray();
-            Arrays.sort(s2CharArray);
-            String s2Sort = new String(s2CharArray);
-            if (!s1Sort.equals(s2Sort)){
+        int[] charArray = new int[26];
+        for (int i = 0;i<len1;i++){
+            charArray[s1.charAt(i) - 'a']++;
+            charArray[s2.charAt(i) - 'a']--;
+        }
+        for (int i = 0;i<26;i++){
+            if (charArray[i] != 0){
                 return false;
             }
-            else{
+        }
+        for (int i = 1;i<len1;i++){
+            // 相同长度的在同一侧
+            if (isScramble(s1.substring(0,i),s2.substring(0,i)) && isScramble(s1.substring(i),s2.substring(i))){
                 return true;
             }
-        }
-        for (int i = 2;i<len1 - 1;i++){
-            String leftStr1 = s1.substring(0,i);
-            String rightStr1 = s1.substring(i,len1);
-            String leftStr2 = s2.substring(0,i);
-            String rightStr2 = s2.substring(i,len2);
-            if (isScramble(leftStr1,leftStr2) && isScramble(rightStr1,rightStr2)){
+            // 相同长度的在不同侧
+            if (isScramble(s1.substring(0,i),s2.substring(len1 - i)) && isScramble(s1.substring(i),s2.substring(0,len1 - i))){
                 return true;
             }
         }
