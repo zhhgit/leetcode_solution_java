@@ -1,0 +1,1 @@
+Deque作为Stack使用。
