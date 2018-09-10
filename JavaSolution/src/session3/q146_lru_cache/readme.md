@@ -1,0 +1,1 @@
+List<Integer>保存key出现的顺序，Map保存对应关系。

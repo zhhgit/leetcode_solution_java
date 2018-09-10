@@ -1,0 +1,1 @@
+Stack，遍历后结果reverse
