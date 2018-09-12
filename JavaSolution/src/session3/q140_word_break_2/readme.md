@@ -1,0 +1,2 @@
+Solution1 backTracking超时
+Solution2 深度遍历，如果s以wordDict中某一项开头，则递归剩下的字符串，再把wordDict中某一项与剩下的字符串的结果拼接，作为最终结果。
