@@ -20,7 +20,7 @@ public class Solution1 {
         // s和p的长度都为0时，为true
         matrix[0][0] = true;
         // 第一列因为初始为false已经满足实际情况：即s长度不为0，p长度为0应该为false，所以不需要特别处理
-        // 第一行即s长度为0，p长度不为0，只有a*或者.*的情况下才能为true
+        // 第一行即s长度为0，p长度不为0，只有a*或者.*的情况下才能为true，可能存在p为a*b*c*这样的情况
         for (int i = 0;i<pLen;i++){
             if (p.charAt(i) == '*' && matrix[0][i-1]){
                 matrix[0][i + 1] = true;
