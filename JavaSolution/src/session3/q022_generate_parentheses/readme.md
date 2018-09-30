@@ -1,1 +1,1 @@
-backTracking，左括号个数要比右括号个数少。
+backTracking，左括号个数要比右括号个数多。
