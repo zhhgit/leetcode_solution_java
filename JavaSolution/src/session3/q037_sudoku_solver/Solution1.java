@@ -56,6 +56,7 @@ public class Solution1 {
         }
     }
 
+    // 当前position符合数独规则，可能出现的数字的列表
     private static List<Integer> possibleDigit(char[][] board, Position position){
         int rowLen = board.length;
         int columnLen = board[0].length;
@@ -93,6 +94,7 @@ public class Solution1 {
         return possible;
     }
 
+    // 找到第一个仍为空的位置
     private static Position findEmpty(char[][] board){
         int rowLen = board.length;
         int columnLen = board[0].length;
