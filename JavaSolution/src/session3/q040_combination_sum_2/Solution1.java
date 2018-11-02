@@ -32,6 +32,7 @@ public class Solution1 {
         else{
             for(int i = pos;i<candidates.length;i++){
                 tempList.add(candidates[i]);
+                // 注意与39题目调用backTracking函数时传参数的差异。
                 backTracking(lists,tempList,candidates,target,tempSum + candidates[i],i+1);
                 if(tempList.size() > 0){
                     tempList.remove(tempList.size()-1);
