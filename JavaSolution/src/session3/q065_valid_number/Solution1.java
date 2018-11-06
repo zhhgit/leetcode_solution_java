@@ -4,7 +4,7 @@ public class Solution1 {
     public static void main(String[] args){
         String[] arr = {"46.e3","-1","23."," 02 ","1","0.1","3e3",".2","e","."," ","a 0","0 0","0.0.1","ab1","ab","1e2a","53K"};
         for (String s:arr){
-            System.out.println(isNumber(s));
+            System.out.println(s + ": "+ isNumber(s));
         }
     }
 
