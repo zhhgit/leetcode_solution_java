@@ -30,7 +30,7 @@ public class Solution1 {
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)){
                     matrix[i][j] = matrix[i-1][j-1];
                 }
-                // 否则为上（在末尾删除）、左(在末尾删除)、左上最小值（替换）+1
+                // 否则为上（在末尾添加）、左(在末尾删除)、左上最小值（替换）+1
                 else {
                     matrix[i][j] = Math.min(Math.min(matrix[i-1][j-1],matrix[i][j-1]),matrix[i-1][j]) + 1;
                 }
