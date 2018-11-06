@@ -15,6 +15,7 @@ public class Solution1 {
         StringBuilder stringBuilder = new StringBuilder();
         for(int i = 0;i<n;i++){
             if(i != n-1){
+                // 除数
                 int dividend = nArr[n-2-i];
                 int pos = (k - 1) / dividend;
                 k = k - (pos * dividend);
@@ -27,6 +28,7 @@ public class Solution1 {
         return stringBuilder.toString();
     }
 
+    // 阶乘数组
     private static int[] getNArr(int n){
         int[] result = new int[n];
         int index = 1;
@@ -38,6 +40,12 @@ public class Solution1 {
         return result;
     }
 
+    /**
+     * 获取本轮次中visit中未被使用的第pos个数字
+     * @param visit 记录数字是否使用
+     * @param pos 第pos个位置
+     * @return 本轮次返回数字
+     */
     private static int getNumInVisit(boolean[] visit,int pos){
         int len = visit.length;
         int count = 0;
