@@ -18,9 +18,11 @@ public class Solution2 {
         int left = 1,right = x,mid;
         while(left < right){
             mid = (left + right) /2;
+            // x < mid * mid，大了一定要缩小
             if(x / mid < mid){
                 right = mid -1;
             }
+            // 小了不一定要增大
             else{
                 if(x / (mid+1) < (mid+1)){
                     return mid;
