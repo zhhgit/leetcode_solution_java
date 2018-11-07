@@ -29,7 +29,7 @@ public class Solution1 {
             return;
         }
         traverse(root.left);
-        // firstElement是prev.val > root.val时的prev
+        // firstElement是prev.val > root.val时的prev，也就是非递增
         if (firstElement == null && prevElement.val >= root.val) {
             firstElement = prevElement;
         }
