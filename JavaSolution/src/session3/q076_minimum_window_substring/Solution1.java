@@ -41,7 +41,7 @@ public class Solution1 {
                 }
                 char pre = s.charAt(lo);
                 map[pre]++;
-                // 如果不大于0，说明pre位置是不在t中的其他字符，如果大于0，说明pre位置是在t中的其他字符
+                // 如果不大于0，说明pre位置是不在t中的其他字符，如果大于0，说明pre位置是在t中的字符
                 if (map[pre] > 0) {
                     cnt--;
                 }
