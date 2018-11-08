@@ -21,7 +21,7 @@ public class Solution2 {
         ArrayList<String> solution = new ArrayList<>();
         dict.add(start);
         bfs(start, end, dict, nodeNeighbors, distance);
-        dfs(start, end, dict, nodeNeighbors, distance, solution, res);
+        dfs(start, end, nodeNeighbors, distance, solution, res);
         return res;
     }
 
@@ -61,7 +61,7 @@ public class Solution2 {
         }
     }
 
-    // 所有下一层次的节点
+    // 变化node字符串中某一位字符，要求变化后的字符串在dict中，返回所有下一层次的节点，
     private static ArrayList<String> getNeighbors(String node, Set<String> dict) {
         ArrayList<String> res = new ArrayList<>();
         char chs[] = node.toCharArray();
@@ -81,21 +81,22 @@ public class Solution2 {
         return res;
     }
 
-    // 深度优先遍历，输出所有最短路径.
-    private static void dfs(String cur, String end, Set<String> dict, HashMap<String, ArrayList<String>> nodeNeighbors, HashMap<String, Integer> distance, ArrayList<String> solution, List<List<String>> res) {
-        solution.add(cur);
+    // 深度优先遍历，输出所有最短路径
+    private static void dfs(String cur, String end, HashMap<String, ArrayList<String>> nodeNeighbors, HashMap<String, Integer> distance, ArrayList<String> tempList, List<List<String>> lists) {
+        tempList.add(cur);
+        // 找到最终字符串就添加到lists中去
         if (end.equals(cur)) {
-            res.add(new ArrayList<String>(solution));
+            lists.add(new ArrayList<String>(tempList));
         }
         else {
             // 所有有可能达到的下一层次节点
             for (String next : nodeNeighbors.get(cur)) {
-                // next节点的最近距离正好等于当前节点最近距离+1
+                // next节点的最近距离正好等于当前节点最近距离+1，这一条件是为了满足最短的限定条件
                 if (distance.get(next) == distance.get(cur) + 1) {
-                    dfs(next, end, dict, nodeNeighbors, distance, solution, res);
+                    dfs(next, end, nodeNeighbors, distance, tempList, lists);
                 }
             }
         }
-        solution.remove(solution.size() - 1);
+        tempList.remove(tempList.size() - 1);
     }
 }

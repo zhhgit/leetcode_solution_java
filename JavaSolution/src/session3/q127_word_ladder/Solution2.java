@@ -34,6 +34,7 @@ public class Solution2 {
                             if (newStr.equals(endWord)){
                                 return level + 1;
                             }
+                            // 如果add方法返回true，也就是添加成功，说明之前没有出现过，应该添加到队列中。
                             else if (reached.add(newStr)){
                                 queue.add(newStr);
                             }
