@@ -28,9 +28,11 @@ public class Solution2 {
                 // 当s增加了一位，增加的一位可以参与匹配，也可以不参与匹配
                 else {
                     int num = 0;
+                    // 当增加的一位参与匹配
                     if (s.charAt(i-1) == t.charAt(j-1)){
                         num += matrix[i-1][j-1];
                     }
+                    // 当增加的一位没有参与匹配
                     num += matrix[i-1][j];
                     matrix[i][j] = num;
                 }
