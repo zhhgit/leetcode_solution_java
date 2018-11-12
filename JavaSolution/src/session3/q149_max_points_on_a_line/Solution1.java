@@ -36,6 +36,7 @@ public class Solution1 {
                     x /= gcd;
                     y /= gcd;
                 }
+                // 取已经互质的x,y拼接字符串代表斜率
                 String key = x + "&" + y;
                 if (map.containsKey(key)){
                     map.put(key,map.get(key) + 1);
