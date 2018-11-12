@@ -13,16 +13,16 @@ public class Solution2 {
 
     private static List<List<String>> findLadders(String start, String end, List<String> wordList) {
         HashSet<String> dict = new HashSet<>(wordList);
-        List<List<String>> res = new ArrayList<>();
+        List<List<String>> lists = new ArrayList<>();
         // 保存每个节点的相邻节点
         HashMap<String, ArrayList<String>> nodeNeighbors = new HashMap<>();
         // 从start到当前节点的最短距离
         HashMap<String, Integer> distance = new HashMap<>();
-        ArrayList<String> solution = new ArrayList<>();
+        ArrayList<String> tempList = new ArrayList<>();
         dict.add(start);
         bfs(start, end, dict, nodeNeighbors, distance);
-        dfs(start, end, nodeNeighbors, distance, solution, res);
-        return res;
+        dfs(start, end, nodeNeighbors, distance, tempList, lists);
+        return lists;
     }
 
     // 广度优先遍历，得到所有节点能够到达的最近距离
@@ -44,7 +44,7 @@ public class Solution2 {
 
                 for (String neighbor : neighbors) {
                     nodeNeighbors.get(cur).add(neighbor);
-                    // 是否访问过
+                    // 没有访问过
                     if (!distance.containsKey(neighbor)) {
                         distance.put(neighbor, curDistance + 1);
                         // 找到最短路径
